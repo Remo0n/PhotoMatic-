@@ -1,0 +1,199 @@
+.home {
+    background-image: url(../images/cover.jpg);
+    background-size: 100% 100%;
+    height: 100vh;
+}
+.home .overlay{
+    background-color: rgba(148,0,211,0.3);
+    width: 100%;
+    height: 100%;
+}
+.caption{
+    margin: 125 0;
+    animation-name: rollIn;
+    animation-duration: .5s;
+}
+.navbar.scrolled{
+    background-color: #1A1A1A !important;
+    padding: 15 0 !important;
+    border-bottom: 1px solid black !important;
+}
+.home .nav-link.scrolled{
+    padding: 0 20 !important;
+    
+}
+.home .navbar-brand.scrolled{
+    color: red !important;
+    padding-left: 50 !important;
+}
+
+.caption hr{
+    margin-top: 5%;
+    background-color: red;
+    height: 5px;
+    width: 45;
+}
+.caption p{
+    width: 50%;
+}
+
+
+.caption button{
+    background-color: rgba(152,52,74,.8);
+    color: white;
+    padding: 15 30;
+    border-radius: 5%
+}
+.caption button:hover{
+    background-color: white;
+    color: black;
+}
+.jeney{
+    width: 300;
+    height: 300;
+}
+.content{
+    position: relative;
+}
+.content h1:after{
+    content: '';
+    width: 50;
+    height: 5;
+    top: 22.5%;
+    left: 0%;
+    background-color: red;
+    position: absolute;
+}
+.content button{
+    border: none;
+}
+.experience{
+    background-color: #1A1A1A;
+}
+.head{
+    position: relative;
+}
+.head h6:after{
+    content: '';
+    width: 40;
+    height: 3;
+    top: 140%;
+    left: 48%;
+    background-color: red;
+    position: absolute;
+}
+.portofolio{
+    background-color: #FAFAFA;
+}
+.title{
+    position: relative;
+}
+.title h6:after{
+    content: '';
+    width: 40;
+    height: 3;
+    top: 140%;
+    left: 48%;
+    background-color: red;
+    position: absolute;
+}
+.photos img{
+    width: 120%;
+    height: 35%
+}
+.testimonials{
+    background-color: #1A1A1A;
+    
+}
+.dash{
+    position: relative;
+    margin-bottom: 50 !important;
+}
+.dash h6:after{
+    content: '';
+    width: 40;
+    height: 3;
+    top: 140%;
+    left: 48%;
+    background-color: red;
+    position: absolute;
+}
+.dash{
+    position: relative;
+    margin-bottom: 50 !important;
+}
+.dash2 h6:after{
+    content: '';
+    width: 40;
+    height: 3;
+    top: 140%;
+    left: 48%;
+    background-color: red;
+    position: absolute;
+}
+.contact{
+    background-color: #FAFAFA;  
+}
+.contact button{
+    background-color: #BF360C;
+    color: white;
+    border-radius: 5%;
+    padding: 5 25;
+    border: none;
+    transition: all 1s
+}
+.contact button:hover{
+    background-color: #DA3C0C;
+    transform: scale(1.1)
+}
+.form-border{
+    width: 100%;
+    height: 87%;
+    background: rgb(255,255,255);
+    background: linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(79,63,63,1) 6%, rgba(255,255,255,1) 10%, rgba(255,255,255,1) 13%, rgba(255,255,255,1) 19%, rgba(152,91,91,1) 24%, rgba(255,255,255,1) 30%, rgba(255,255,255,1) 36%, rgba(255,255,255,1) 37%, rgba(255,255,255,1) 40%, rgba(128,145,19,1) 45%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 56%, rgba(68,208,32,1) 63%, rgba(255,255,255,1) 65%, rgba(255,255,255,1) 70%, rgba(253,255,255,1) 75%, rgba(41,200,204,1) 79%, rgba(252,252,252,1) 84%, rgba(251,253,255,1) 88%, rgba(255,255,255,1) 94%, rgba(17,126,148,1) 100%);
+    background-size: 20% 20%; 
+    padding: 10px;
+}
+@keyframes rollIn {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg);
+    transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes swing {
+  20% {
+    -webkit-transform: rotate3d(0, 0, 1, 15deg);
+    transform: rotate3d(0, 0, 1, 15deg);
+  }
+
+  40% {
+    -webkit-transform: rotate3d(0, 0, 1, -10deg);
+    transform: rotate3d(0, 0, 1, -10deg);
+  }
+
+  60% {
+    -webkit-transform: rotate3d(0, 0, 1, 5deg);
+    transform: rotate3d(0, 0, 1, 5deg);
+  }
+
+  80% {
+    -webkit-transform: rotate3d(0, 0, 1, -5deg);
+    transform: rotate3d(0, 0, 1, -5deg);
+  }
+
+  to {
+    -webkit-transform: rotate3d(0, 0, 1, 0deg);
+    transform: rotate3d(0, 0, 1, 0deg);
+  }
+}
+.img-thumbnail:hover{
+     animation: swing 1s;
+ 
+}
